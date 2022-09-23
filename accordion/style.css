@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 3rem;
+}
+
+.accordion {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion .title {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.accordion .title h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.accordion .title p {
+  font-size: 1.6rem;
+}
+
+.accordion .icon {
+  width: 5rem;
+  height: 5rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.accordion .icon img {
+  max-width: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/*Implementação*/
+
+.accordion p {
+  display: none;
+}
+
+.accordion.active p {
+  display: block;
+}

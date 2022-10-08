@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button class="js-open-modal">Abrir Modal</button>
+
+  <div class="modal">
+    <!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
+    <div class="overlay"></div>
+
+    <!--Conteúdo-->
+    <div class="box">
+      <button class="btn-close js-close-modal">Fechar</button>
+      <h2>Conteúdo do modal</h2>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

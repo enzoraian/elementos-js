@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soma de dois Números</title>
+</head>
+
+<body>
+  <h1>Soma de Dois Números</h1>
+  <p><strong>Digite o número 1:</strong> <input type="text" id="numero1"></p>
+  <p><strong>Digite o número 2:</strong> <input type="text" id="numero2"></p>
+
+  <button class="btn-soma">Somar</button>
+
+  <p id="resposta"></p>
+</body>
+
+<script>
+  const numero1 = document.querySelector('#numero1')
+  const numero2 = document.querySelector('#numero2')
+  const btnMostrar = document.querySelector('.btn-soma')
+  const resposta = document.getElementById('resposta')
+
+  function printarValores() {
+    let soma = Number(numero1.value) + Number(numero2.value)
+    resposta.innerText = soma
+  }
+  btnMostrar.addEventListener('click', printarValores)
+
+</script>
+
+</html>

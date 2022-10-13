@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal dialog</title>
+
+  <style>
+    dialog {
+      width: 80%;
+      border: none;
+      box-shadow: 0 0 1em rgba(0 0 0 / 0.3);
+    }
+
+    dialog::backdrop {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <button>Abrir modal</button>
+  <dialog>
+    <h1>Olá Mundo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum ea nostrum error similique nam voluptatem.
+      Deserunt velit quisquam repudiandae consequatur iusto est, dolorem minus saepe? Alias saepe eum tempora!</p>
+
+    <!--btn close-->
+    <button>Fechar</button>
+  </dialog>
+
+</body>
+
+<script>
+  const btnOpen = document.querySelector("button")
+  const btnClose = document.querySelector("dialog button")
+  const modal = document.querySelector("dialog")
+
+  btnOpen.addEventListener("click", () => {
+    modal.showModal()
+  })
+
+  btnClose.addEventListener("click", () => {
+    modal.close()
+  })
+</script>
+
+</html>
